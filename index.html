@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Mantra Counter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -42,14 +43,14 @@
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      border: 3px solid white;   /* default → white */
+      border: 3px solid white;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 22px;
       margin: 20px 0;
       color: white;
-      transition: all 0.3s ease; /* smooth change */
+      transition: all 0.3s ease;
     }
     .controls {
       display: flex;
@@ -64,7 +65,7 @@
       border: none;
       font-size: 28px;
       cursor: pointer;
-      background: white;   /* default → white */
+      background: white;
       color: black;
     }
     .reset, .back {
@@ -78,26 +79,24 @@
       cursor: pointer;
     }
     #mantraTitle {
-      color: white;  
-      font-size: 16px;  /* 🔹 Title छोटा */
+      color: white;
+      font-size: 16px;
       margin: 5px 0;
     }
     #mantraText {
-      color: yellow;  
-      font-size: 28px; /* 🔹 बड़ा */
+      color: yellow;
+      font-size: 28px;
       margin: 10px 0;
     }
   </style>
 </head>
 <body>
-  <!-- Main Menu -->
   <div id="menu" class="screen active">
     <h2>मंत्र चुनें</h2>
     <button class="btn" onclick="openCounter('Chandra Mantra','ॐ सोमाय नम:')">Chandra Mantra</button>
     <button class="btn" onclick="openCounter('Sukra Mantra','ॐ द्रां द्रीं द्रौं सः शुक्राय नम:')">Sukra Mantra</button>
   </div>
 
-  <!-- Counter Page -->
   <div id="counterPage" class="screen">
     <div class="counter-container">
       <h2 id="mantraTitle"></h2>

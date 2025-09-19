@@ -9,29 +9,31 @@
       background: #111;
       color: white;
       margin: 0;
+      padding: 0;
       height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      overflow: hidden;
     }
 
+    /* 🔹 Screen setup */
     .screen {
-      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
       flex-direction: column;
     }
     .active { display: flex; }
 
+    /* 🔹 Menu */
     h2 {
       color: gold;
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: 26px;
+      margin-bottom: 25px;
     }
-
     .btn {
       margin: 12px 0;
       padding: 16px 30px;
@@ -45,15 +47,26 @@
     }
     .btn:hover { background: #333; }
 
+    /* 🔹 Counter */
     .counter-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100%;
       width: 100%;
+      height: 100%;
+      text-align: center;
     }
-
+    #mantraTitle {
+      color: white;  
+      font-size: 20px;
+      margin: 6px 0;
+    }
+    #mantraText {
+      color: yellow;  
+      font-size: 30px;
+      margin: 12px 0;
+    }
     .circle {
       width: 140px;
       height: 140px;
@@ -67,14 +80,12 @@
       color: white;
       transition: all 0.3s ease;
     }
-
     .controls {
       display: flex;
       justify-content: center;
       gap: 50px;
       margin: 15px 0 25px 0;
     }
-
     .control-btn {
       width: 65px;
       height: 65px;
@@ -85,7 +96,6 @@
       background: white;
       color: black;
     }
-
     .reset, .back {
       background: red;
       color: white;
@@ -95,17 +105,6 @@
       border-radius: 8px;
       font-size: 18px;
       cursor: pointer;
-    }
-
-    #mantraTitle {
-      color: white;  
-      font-size: 18px;
-      margin: 6px 0;
-    }
-    #mantraText {
-      color: yellow;  
-      font-size: 30px;
-      margin: 12px 0;
     }
   </style>
 </head>
